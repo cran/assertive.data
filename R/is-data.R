@@ -112,8 +112,8 @@ is_cas_number <- function(x)
 #' assertive.base::dont_stop(assert_all_are_credit_card_numbers(x))
 #' @references \url{http://www.regular-expressions.info/creditcard.html} 
 #' contains the regexes used by this function.
-#' The example valid card numbers are from
-#' \url{http://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/credit_card_numbers.htm}
+#' The example valid card numbers were from PayPal developer documentation.
+#' The URL is no longer available.
 #' @importFrom assertive.base bapply
 #' @importFrom assertive.strings character_to_list_of_integer_vectors
 #' @export
@@ -500,7 +500,7 @@ is_isbn13_code <- function(x, .xname = get_name_in_parent(x))
 #' assert_any_are_isbn_codes(x10, type = "10")
 #' is_isbn_code(x13, type = "13")
 #' assert_any_are_isbn_codes(x13, type = "13")
-#' #These tests should fail.
+#' # These checks should fail.
 #' assertive.base::dont_stop(assert_all_are_isbn_codes(x10, type = "10"))
 #' assertive.base::dont_stop(assert_all_are_isbn_codes(x13, type = "13"))
 #' @export
